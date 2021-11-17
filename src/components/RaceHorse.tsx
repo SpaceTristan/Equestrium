@@ -2,27 +2,27 @@ import { Button } from "@mui/material"
 import { makeStyles } from "@material-ui/core/styles";
 
 const style = makeStyles({
-    mintButton: {
-      color: "white",
+    raceButton: {
+      color: "green",
       //backgroundColor: "gray",
       top: "70%",
       height: 50,
       position: "relative",
-      transform: "translateY(50%)"
+      transform: "translateY(150%)"
   
     }
   });
-export const MintHorse = () => {
-    const handleMintSubmit = () => {
-        return console.log("Horse minted")//MintHorse()
+export const RaceHorse = () => {
+    const handleRaceSubmit = () => {
+        return console.log("Horse racing")//RaceHorse()
     }
     const classes = style();
     return (
         <div>
             <Button variant="contained"
-            className={classes.mintButton}
-            onClick={handleMintSubmit}>
-                Mint Horse
+            className={classes.raceButton}
+            onClick={handleRaceSubmit}>
+                Race Horse
             </Button>
         </div>
     )

@@ -1,7 +1,11 @@
 import {MintHorse} from "./MintHorse"
+import {RaceHorse} from "./RaceHorse"
 
 export const Main = () => {
     return (
-        <MintHorse />
+        <div>
+            <MintHorse />
+            <RaceHorse />
+        </div>
     )
 }

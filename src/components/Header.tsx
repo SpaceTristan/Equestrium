@@ -23,7 +23,7 @@ export const Header = () => {
         await authenticate
     };
 
-    useEffect(() => { if (isAuthenticated) { enableWeb3() }}, [isAuthenticated]);
+    useEffect(() => { if (isAuthenticated) { enableWeb3() }}, [enableWeb3, isAuthenticated]);
 
     return (
         <AppBar position="static" color='transparent'>
@@ -41,7 +41,7 @@ export const Header = () => {
         }}
             disabled={isAuthenticating}
         >
-            { isAuthenticating && isWeb3EnableLoading ? 'Loading...' : !isAuthenticated && !isWeb3Enabled ? 'Connect and Login': 'Logout'}
+            { isAuthenticating && isWeb3EnableLoading ? 'Authenticating...' : !isAuthenticated && !isWeb3Enabled ? 'Authenticate': 'Logout'}
         </Button>
         </Toolbar>
         </AppBar>
