@@ -1,4 +1,4 @@
 # Equestrium
 
-A platform for minting horses, racing them and betting on the outcomes
+A platform for racing your nfts and betting on them
 
