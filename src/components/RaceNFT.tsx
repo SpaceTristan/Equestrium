@@ -12,9 +12,9 @@ const style = makeStyles({
   
     }
   });
-export const RaceHorse = () => {
+export const RaceNFT = () => {
     const handleRaceSubmit = () => {
-        return console.log("Horse racing")//RaceHorse()
+        return console.log("NFT racing")//RaceNFT()
     }
     const classes = style();
     return (
@@ -22,7 +22,7 @@ export const RaceHorse = () => {
             <Button variant="contained"
             className={classes.raceButton}
             onClick={handleRaceSubmit}>
-                Race Horse
+                Race NFT
             </Button>
         </div>
     )

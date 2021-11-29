@@ -2,7 +2,7 @@ import { Button } from "@mui/material"
 import { makeStyles } from "@material-ui/core/styles";
 
 const style = makeStyles({
-    mintButton: {
+    loadNFT: {
       color: "white",
       //backgroundColor: "gray",
       top: "70%",
@@ -12,17 +12,18 @@ const style = makeStyles({
   
     }
   });
-export const MintHorse = () => {
-    const handleMintSubmit = () => {
-        return console.log("Horse minted")//MintHorse()
+export const LoadNFTs = () => {
+    const handleNFTLoad
+     = () => {
+        return console.log("NFT loaded")//MintHorse()
     }
     const classes = style();
     return (
         <div>
             <Button variant="contained"
-            className={classes.mintButton}
-            onClick={handleMintSubmit}>
-                Mint Horse
+            className={classes.loadNFT}
+            onClick={handleNFTLoad}>
+                Load NFT 
             </Button>
         </div>
     )

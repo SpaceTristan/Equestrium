@@ -1,11 +1,11 @@
-import {MintHorse} from "./MintHorse"
-import {RaceHorse} from "./RaceHorse"
+import { LoadNFTs } from "./LoadNFTs"
+import { RaceNFT } from "./RaceNFT"
 
 export const Main = () => {
     return (
         <div>
-            <MintHorse />
-            <RaceHorse />
+            <LoadNFTs />
+            <RaceNFT />
         </div>
     )
 }
